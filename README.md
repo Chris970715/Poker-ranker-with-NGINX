@@ -45,26 +45,7 @@ by the user (sorted in rank order from low to high) and a message indicating the
 (i.e. High card, 1 pair, 2 pair, 3 of a kind, etc).
 In addition, the following function MUST be called and displayed as HTML output:
 
-import subprocess
-
-def piInfo():
-   print(subprocess.check_output("date", shell=True, text=True))
-   print(subprocess.check_output("ps ax | grep nginx", shell=True, text=True))
-   print(subprocess.check_output("uname -a", shell=True, text=True))
-   print(subprocess.check_output("cat /sys/class/net/eth0/address", shell=True, text=True))
-   print(subprocess.check_output("cat /proc/cpuinfo | tail -5", shell=True, text=True))
-   print(subprocess.check_output("ifconfig | grep netmask", shell=True, text=True))
-
-# end def
-
-piInfo( )
-
-
-Your html form must also provide a "Check Poker Hand" (submit) button that executes your
-script as well as a "Clear" (reset) button that resets your form back to default values.
-
-For example, if the user selects the following cards: 2h, kh, 7d, 7s, 7c
-then your Python program would send back an HTML response of:
+OUTPUT
 
     
 Your Poker Hand represents a THREE OF A KIND!
